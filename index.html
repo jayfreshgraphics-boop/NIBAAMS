@@ -38,6 +38,7 @@
 :root[data-theme="dark"] .badge.mentor{background:#3A2E12; color:#F5C563;}
 :root[data-theme="dark"] .badge.admin{background:#3A1512; color:#F2938A;}
 :root[data-theme="dark"] .badge.general{background:#2A2A2A; color:#D8D8D8;}
+:root[data-theme="dark"] .badge.rpjd{background:#1B2A4A; color:#9DB4F5;}
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{
@@ -69,6 +70,7 @@ button{font-family:inherit;}
 .badge.mentor{background:#FDF0DB;color:var(--gold-deep);}
 .badge.admin{background:#FCE4E1;color:#B8352A;}
 .badge.general{background:#EDEDED;color:#555;}
+.badge.rpjd{background:#E3EAFB;color:#2F4FB8;}
 
 /* ===================== LOGIN SCREEN ===================== */
 #login-screen{
@@ -227,41 +229,41 @@ code{background:var(--green-light); padding:2px 6px; border-radius:4px; font-fam
 }
 @media (max-width:880px){.profile-tabs{top:68px;}}
 
-.idcard-wrap{display:flex; flex-direction:column; align-items:center; gap:16px; padding:10px 0 30px;}
+.idcard-wrap{display:flex; flex-direction:column; align-items:center; gap:14px; padding:6px 0 24px;}
 .idcard{
-  position:relative; width:100%; max-width:270px; padding:22px 20px 20px;
+  position:relative; width:100%; max-width:250px; padding:16px 18px 16px;
   background:linear-gradient(160deg, #0B1F14 0%, #123626 60%, #0B1F14 100%);
-  border:1.5px solid var(--green); border-radius:16px;
-  box-shadow:0 0 0 1px rgba(15,122,69,0.15), 0 20px 50px -18px rgba(0,0,0,0.6), 0 0 40px -10px rgba(15,122,69,0.5);
+  border:1.5px solid var(--green); border-radius:14px;
+  box-shadow:0 0 0 1px rgba(15,122,69,0.15), 0 16px 40px -18px rgba(0,0,0,0.6), 0 0 30px -10px rgba(15,122,69,0.5);
   text-align:center; color:#EAF6EE; overflow:hidden;
 }
 .idcard-glow{
-  position:absolute; top:-50px; left:50%; transform:translateX(-50%);
-  width:170px; height:170px; background:radial-gradient(circle, rgba(74,222,128,0.35), transparent 70%);
+  position:absolute; top:-40px; left:50%; transform:translateX(-50%);
+  width:140px; height:140px; background:radial-gradient(circle, rgba(74,222,128,0.35), transparent 70%);
   pointer-events:none;
 }
-.idcard-logo{width:110px; height:auto; max-height:64px; object-fit:contain; position:relative; z-index:1;}
-.idcard-org{font-family:'Fraunces',serif; font-weight:700; font-size:13.5px; letter-spacing:0.03em; margin-top:8px; position:relative; z-index:1;}
-.idcard-org-sub{font-size:8.5px; color:#9BB0A2; text-transform:uppercase; letter-spacing:0.06em; margin-top:2px; position:relative; z-index:1;}
+.idcard-logo{width:92px; height:auto; max-height:52px; object-fit:contain; position:relative; z-index:1;}
+.idcard-org{font-family:'Fraunces',serif; font-weight:700; font-size:12px; letter-spacing:0.02em; margin-top:6px; position:relative; z-index:1;}
+.idcard-org-sub{font-size:7.5px; color:#9BB0A2; text-transform:uppercase; letter-spacing:0.05em; margin-top:2px; position:relative; z-index:1;}
 .idcard-photo{
-  width:82px; height:82px; border-radius:50%; margin:16px auto 10px; overflow:hidden;
-  border:2px solid var(--green); box-shadow:0 0 18px -4px rgba(74,222,128,0.7);
+  width:68px; height:68px; border-radius:50%; margin:12px auto 8px; overflow:hidden;
+  border:2px solid var(--green); box-shadow:0 0 14px -4px rgba(74,222,128,0.7);
   display:flex; align-items:center; justify-content:center; background:var(--green-light);
-  font-family:'Space Mono',monospace; font-size:20px; font-weight:700; color:#B9E8CC; position:relative; z-index:1;
+  font-family:'Space Mono',monospace; font-size:17px; font-weight:700; color:#B9E8CC; position:relative; z-index:1;
 }
 .idcard-photo img{width:100%; height:100%; object-fit:cover;}
-.idcard-name{font-family:'Fraunces',serif; font-size:14.5px; font-weight:700; letter-spacing:0.01em; position:relative; z-index:1;}
-.idcard-role{font-size:10px; color:#9BB0A2; margin-top:2px; position:relative; z-index:1;}
-.idcard-meta{margin-top:16px; text-align:left; display:flex; flex-direction:column; gap:9px; position:relative; z-index:1;}
-.idcard-meta span{display:block; font-size:8.5px; letter-spacing:0.06em; color:#7C9284; text-transform:uppercase; font-family:'Space Mono',monospace;}
-.idcard-meta b{display:block; font-size:11.5px; color:#EAF6EE; margin-top:2px;}
-.idcard-qr-wrap{margin-top:16px; display:flex; justify-content:center; position:relative; z-index:1;}
+.idcard-name{font-family:'Fraunces',serif; font-size:13px; font-weight:700; letter-spacing:0.01em; position:relative; z-index:1;}
+.idcard-role{font-size:9px; color:#9BB0A2; margin-top:2px; position:relative; z-index:1;}
+.idcard-meta{margin-top:12px; text-align:left; display:flex; flex-direction:column; gap:6px; position:relative; z-index:1;}
+.idcard-meta span{display:block; font-size:7.5px; letter-spacing:0.05em; color:#7C9284; text-transform:uppercase; font-family:'Space Mono',monospace;}
+.idcard-meta b{display:block; font-size:10.5px; color:#EAF6EE; margin-top:1px; line-height:1.3;}
+.idcard-qr-wrap{margin-top:12px; display:flex; justify-content:center; position:relative; z-index:1;}
 .idcard-qr-wrap canvas{
-  display:block; width:96px !important; height:96px !important;
-  border-radius:6px; background:#fff; padding:6px; box-sizing:content-box;
+  display:block; width:84px !important; height:84px !important;
+  border-radius:6px; background:#fff; padding:5px; box-sizing:content-box;
 }
 .idcard-warn{margin-top:12px; font-size:10px; color:#F5C563; position:relative; z-index:1;}
-.idcard-download-btn{max-width:270px; width:100%;}
+.idcard-download-btn{max-width:250px; width:100%;}
 
 .accordion{
   margin-top:22px; border:1px solid var(--line); border-radius:8px; overflow:hidden;
@@ -594,6 +596,9 @@ tr:last-child td{border-bottom:none;}
           </div>
         </div>
         <button type="button" class="theme-toggle-inline" id="theme-toggle-app" aria-label="Toggle dark mode" title="Toggle dark / light mode"><span id="theme-icon-app">&#9789;</span></button>
+        <button type="button" class="theme-toggle-inline" id="topbar-signout" aria-label="Sign out" title="Sign out">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+        </button>
         <div class="meta" style="text-align:right;">
           <b id="chip-name">—</b>
           <span id="chip-id" class="mono">—</span>
@@ -722,12 +727,16 @@ document.getElementById("login-form").addEventListener("submit", async (e)=>{
   await loadCurrentUserAndEnter();
 });
 
-document.getElementById("logout-btn").addEventListener("click", async ()=>{
+async function handleSignOut(){
   await sb.auth.signOut();
   currentUser = null;
   appScreen.classList.remove("active");
   loginScreen.style.display = "grid";
   document.getElementById("login-form").reset();
+}
+document.getElementById("logout-btn").addEventListener("click", handleSignOut);
+document.getElementById("topbar-signout").addEventListener("click", ()=>{
+  if(confirm("Sign out of the portal?")) handleSignOut();
 });
 
 async function loadCurrentUserAndEnter(){
@@ -766,7 +775,15 @@ const NAV = {
     {id:"announcements", label:"Announcements", ic:"🔔"},
     {id:"tracking", label:"Engagement Tracking", ic:"▦"},
     {id:"directory", label:"Cohort Directory", ic:"☰"},
-    {id:"idcard", label:"My ID Card", ic:"▧"}
+    {id:"idcard", label:"My ID Card", ic:"▧"},
+    {id:"profile", label:"My Profile", ic:"●"}
+  ],
+  RPJD: [
+    {id:"overview", label:"Cohort Overview", ic:"◆"},
+    {id:"announcements", label:"Announcements", ic:"🔔"},
+    {id:"tracking", label:"Engagement Tracking", ic:"▦"},
+    {id:"idcard", label:"My ID Card", ic:"▧"},
+    {id:"profile", label:"My Profile", ic:"●"}
   ],
   GENERAL: [
     {id:"overview", label:"Programme Overview", ic:"◆"},
@@ -855,8 +872,8 @@ function roleBadge(role){
 /* ============ OVERVIEW ============ */
 async function renderOverview(){
   if(currentUser.role === "GENERAL"){
-    const { count: menteeCount } = await sb.from("users").select("*", {count:"exact", head:true}).eq("role","MENTEE");
-    const { count: mentorCount } = await sb.from("users").select("*", {count:"exact", head:true}).eq("role","MENTOR");
+    const { count: menteeCount } = await sb.from("users").select("*", {count:"exact", head:true}).eq("role","MENTEE").eq("is_active", true);
+    const { count: mentorCount } = await sb.from("users").select("*", {count:"exact", head:true}).eq("role","MENTOR").eq("is_active", true);
     return `
       <p style="max-width:640px;color:var(--ink-soft);font-size:15px;line-height:1.7;">
       Welcome to the NIBAAMS 2026 Cohort portal. This general-access view gives you a read-only
@@ -895,7 +912,7 @@ async function renderOverview(){
 
   if(currentUser.role === "MENTOR"){
     const { data: mine } = await sb.from("mentor_monthly_reports").select("reporting_month, submitted_at").eq("mentor_id", currentUser.id).order("submitted_at", {ascending:false});
-    const { data: mentees } = await sb.from("mentor_mentee_assignments").select("mentee_id, users:mentee_id(full_name, participant_id)").eq("mentor_id", currentUser.id);
+    const { data: mentees } = await sb.from("mentor_mentee_assignments").select("mentee_id, users:mentee_id!inner(full_name, participant_id)").eq("mentor_id", currentUser.id).eq("users.is_active", true);
     const submittedThisMonth = (mine||[]).some(r=>r.reporting_month === MONTH_LABEL);
     return `
       <div class="grid cols-3">
@@ -918,10 +935,11 @@ async function renderOverview(){
       </div>`;
   }
 
-  if(currentUser.role === "ADMIN"){
+  if(currentUser.role === "ADMIN" || currentUser.role === "RPJD"){
     const { count: mentorReports } = await sb.from("mentor_monthly_reports").select("*", {count:"exact", head:true}).eq("reporting_month", MONTH_LABEL);
     const { count: menteeReports } = await sb.from("mentee_monthly_reports").select("*", {count:"exact", head:true}).eq("reporting_month", MONTH_LABEL);
     const { count: totalUsers } = await sb.from("users").select("*", {count:"exact", head:true});
+    const isAdmin = currentUser.role === "ADMIN";
     return `
       <div class="grid cols-3">
         <div class="card stat-card"><b>${totalUsers ?? "—"}</b><span>Total registered</span></div>
@@ -935,11 +953,17 @@ async function renderOverview(){
           <div class="desc">See this month's submissions from mentors and mentees.</div>
           <button class="btn primary" data-goto="tracking">Open tracking</button>
         </div>
+        ${isAdmin ? `
         <div class="card">
           <h3>Cohort directory</h3>
           <div class="desc">Everyone registered in the 2026 cohort.</div>
           <button class="btn ghost" data-goto="directory">View directory</button>
-        </div>
+        </div>` : `
+        <div class="card">
+          <h3>Announcements</h3>
+          <div class="desc">Post an update to mentors and mentees.</div>
+          <button class="btn ghost" data-goto="announcements">Open announcements</button>
+        </div>`}
       </div>`;
   }
   return "";
@@ -1007,7 +1031,7 @@ async function renderMenteeForm(){
 }
 
 async function renderMentorForm(){
-  const { data: mentees } = await sb.from("mentor_mentee_assignments").select("mentee_id, users:mentee_id(full_name, participant_id)").eq("mentor_id", currentUser.id);
+  const { data: mentees } = await sb.from("mentor_mentee_assignments").select("mentee_id, users:mentee_id!inner(full_name, participant_id)").eq("mentor_id", currentUser.id).eq("users.is_active", true);
   const { data: existing } = await sb.from("mentor_monthly_reports").select("*").eq("mentor_id", currentUser.id).eq("reporting_month", MONTH_LABEL).maybeSingle();
   let existingRatings = {};
   if(existing){
@@ -1121,7 +1145,7 @@ async function setupIdCard(){
       const qrValue = currentUser.email
         ? `mailto:${currentUser.email}?subject=${encodeURIComponent("NIBAAMS 2026 Cohort — "+currentUser.full_name)}&body=${encodeURIComponent("Hi "+currentUser.full_name+",\n\n")}`
         : `NIBAAMS 2026 Cohort ID: ${currentUser.participant_id} (no email on file)`;
-      await window.QRCode.toCanvas(canvas, qrValue, { width: 96, margin: 1, color: { dark: "#0B1F14", light: "#FFFFFF" } });
+      await window.QRCode.toCanvas(canvas, qrValue, { width: 84, margin: 1, color: { dark: "#0B1F14", light: "#FFFFFF" } });
     }
   }catch(err){ console.error("QR generation failed:", err); }
 
@@ -1246,6 +1270,12 @@ function renderProfile(){
         <input type="password" name="confirm_password" minlength="6" required></div>
         <button type="submit" class="btn primary">Update password</button>
       </form>
+  </div>
+
+  <div class="card">
+    <h3>Sign out</h3>
+    <div class="desc">End your session on this device.</div>
+    <button type="button" class="btn ghost" id="profile-signout-btn">Sign out</button>
   </div>`;
 }
 
@@ -1259,7 +1289,7 @@ function renderAbout(){
 /* ============ ID CARD ============ */
 function renderIdCard(){
   const pic = photoUrl(currentUser.photo_path);
-  const roleLabel = currentUser.role === "MENTOR" ? "Mentor" : currentUser.role === "ADMIN" ? "Admin" : "Mentee";
+  const roleLabel = {MENTOR:"Mentor", ADMIN:"Admin", RPJD:"RPJD Committee", GENERAL:"General"}[currentUser.role] || "Mentee";
   const hasEmail = !!currentUser.email;
   return `
   <div class="idcard-wrap">
@@ -1276,7 +1306,7 @@ function renderIdCard(){
       <div class="idcard-meta">
         <div><span>ID</span><b>${currentUser.participant_id}</b></div>
         <div><span>COHORT</span><b>2026</b></div>
-        <div><span>PROGRAMME</span><b>NIBAAMS Mentorship — Ikeja Branch</b></div>
+        <div><span>PROGRAMME</span><b>NIBAAMS Mentorship</b></div>
       </div>
       <div class="idcard-qr-wrap"><canvas id="idcard-qr"></canvas></div>
       ${!hasEmail ? `<div class="idcard-warn">Add your email in My Profile to activate the QR code.</div>` : ""}
@@ -1288,8 +1318,8 @@ function renderIdCard(){
 /* ============ MENTOR: MY MENTEES ============ */
 async function renderMentorMentees(){
   const { data: mentees, error } = await sb.from("mentor_mentee_assignments")
-    .select("mentee_id, users:mentee_id(id, full_name, participant_id, email, gender, photo_path, phone, education_level, field_of_study, institution, employment_status, job_title, employer, years_experience)")
-    .eq("mentor_id", currentUser.id);
+    .select("mentee_id, users:mentee_id!inner(id, full_name, participant_id, email, gender, photo_path, phone, education_level, field_of_study, institution, employment_status, job_title, employer, years_experience)")
+    .eq("mentor_id", currentUser.id).eq("users.is_active", true);
   if(error || !mentees || !mentees.length) return `<div class="card">No mentees assigned yet.</div>`;
   const rows = mentees.map(m => {
     const u = m.users;
@@ -1364,14 +1394,19 @@ async function renderAdminTracking(){
 }
 
 async function renderDirectory(){
-  const { data: users } = await sb.from("users").select("full_name, participant_id, role, email").order("role");
+  const { data: users } = await sb.from("users").select("full_name, participant_id, role, email, is_active").order("role");
   const rows = (users||[]).map(u => `
-    <tr>
+    <tr style="${u.is_active===false ? 'opacity:0.55;' : ''}">
       <td>${u.full_name}</td>
       <td class="mono">${u.participant_id}</td>
       <td>${roleBadge(u.role)}</td>
       <td>${u.email || "—"}</td>
-      <td><button class="btn ghost reset-pw-btn" data-pid="${u.participant_id}" style="padding:5px 10px;font-size:12px;">Reset password</button></td>
+      <td>${u.is_active===false ? '<span class="pill" style="background:#FCE4E1;color:#B8352A;">Inactive</span>' : '<span class="pill ok">Active</span>'}</td>
+      <td style="white-space:nowrap;">
+        <button class="btn ghost reset-pw-btn" data-pid="${u.participant_id}" style="padding:5px 10px;font-size:12px;">Reset pw</button>
+        <button class="btn ghost toggle-active-btn" data-pid="${u.participant_id}" data-active="${u.is_active!==false}" style="padding:5px 10px;font-size:12px;">${u.is_active===false ? "Reactivate" : "Deactivate"}</button>
+        <button class="btn ghost delete-user-btn" data-pid="${u.participant_id}" style="padding:5px 10px;font-size:12px;color:#B8352A;">Delete</button>
+      </td>
     </tr>`).join("");
   return `
   <div class="card" style="margin-bottom:20px;">
@@ -1385,15 +1420,22 @@ async function renderDirectory(){
         <div class="field"><label>Gender</label>
           <select name="gender"><option value="">Prefer not to say</option><option value="Male">Male</option><option value="Female">Female</option></select></div>
         <div class="field"><label>Role</label>
-          <select name="role" required><option value="MENTEE">Mentee</option><option value="MENTOR">Mentor</option><option value="ADMIN">Admin</option><option value="GENERAL">General</option></select></div>
+          <select name="role" required id="add-user-role">
+            <option value="MENTEE">Mentee</option>
+            <option value="MENTOR">Mentor</option>
+            <option value="ADMIN">Admin</option>
+            <option value="RPJD">RPJD Committee</option>
+            <option value="GENERAL">General</option>
+          </select></div>
       </div>
-      <button type="submit" class="btn primary">Register member</button>
+      <div class="hint" id="add-user-id-hint" style="margin-top:-8px;">Cohort ID format: N26-XXX (mentee/mentor), N26-RPJD-001 (RPJD Committee)</div>
+      <button type="submit" class="btn primary" style="margin-top:12px;">Register member</button>
     </form>
     <div id="add-user-result"></div>
   </div>
   <div class="card">
     <table class="data-table">
-      <thead><tr><th>Name</th><th>ID</th><th>Role</th><th>Email</th><th></th></tr></thead>
+      <thead><tr><th>Name</th><th>ID</th><th>Role</th><th>Email</th><th>Status</th><th></th></tr></thead>
       <tbody>${rows}</tbody>
     </table>
   </div>`;
@@ -1474,7 +1516,7 @@ function renderBellItems(anns, readIds){
 }
 
 async function refreshBell(){
-  if(currentUser.role !== "MENTOR" && currentUser.role !== "MENTEE" && currentUser.role !== "ADMIN") return;
+  if(!["MENTOR","MENTEE","ADMIN","RPJD"].includes(currentUser.role)) return;
   const { anns, readIds } = await loadBellAnnouncements();
   const unreadCount = anns.filter(a=>!readIds.has(a.id)).length;
   const badge = document.getElementById("bell-badge");
@@ -1600,11 +1642,35 @@ async function attachViewHandlers(viewId){
         const result = await callAdminUsersFn({ action: "reset_password", participant_id: btn.dataset.pid });
         if(!result.ok){
           toast("Couldn't reset — " + result.error);
-          btn.disabled = false; btn.textContent = "Reset password";
+          btn.disabled = false; btn.textContent = "Reset pw";
           return;
         }
         alert(`New temporary password for ${result.participant_id}:\n\n${result.new_password}\n\nShare this with them directly.`);
-        btn.disabled = false; btn.textContent = "Reset password";
+        btn.disabled = false; btn.textContent = "Reset pw";
+      });
+    });
+
+    document.querySelectorAll(".toggle-active-btn").forEach(btn=>{
+      btn.addEventListener("click", async ()=>{
+        const currentlyActive = btn.dataset.active === "true";
+        const verb = currentlyActive ? "deactivate" : "reactivate";
+        if(!confirm(`Are you sure you want to ${verb} ${btn.dataset.pid}?`)) return;
+        btn.disabled = true;
+        const result = await callAdminUsersFn({ action: "set_active", participant_id: btn.dataset.pid, is_active: !currentlyActive });
+        if(!result.ok){ toast("Couldn't update — " + result.error); btn.disabled = false; return; }
+        toast(`${btn.dataset.pid} ${result.is_active ? "reactivated" : "deactivated"}.`);
+        await renderView("directory");
+      });
+    });
+
+    document.querySelectorAll(".delete-user-btn").forEach(btn=>{
+      btn.addEventListener("click", async ()=>{
+        if(!confirm(`Permanently delete ${btn.dataset.pid}? This removes their account and all their records. This can't be undone.`)) return;
+        btn.disabled = true; btn.textContent = "Deleting…";
+        const result = await callAdminUsersFn({ action: "delete_user", participant_id: btn.dataset.pid });
+        if(!result.ok){ toast("Couldn't delete — " + result.error); btn.disabled = false; btn.textContent = "Delete"; return; }
+        toast(`${btn.dataset.pid} deleted.`);
+        await renderView("directory");
       });
     });
   }
@@ -1650,6 +1716,9 @@ async function attachViewHandlers(viewId){
   }
 
   if(viewId === "profile"){
+    document.getElementById("profile-signout-btn")?.addEventListener("click", ()=>{
+      if(confirm("Sign out of the portal?")) handleSignOut();
+    });
     document.querySelectorAll(".profile-tab").forEach(tab=>{
       tab.addEventListener("click", ()=>{
         document.querySelectorAll(".profile-tab").forEach(t=>t.classList.remove("active"));
@@ -1808,6 +1877,11 @@ function showRecoveryForm(){
 if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){
   document.body.classList.add("reduced-motion");
 }
+sb.rpc("cohort_public_stats").then(({data, error})=>{
+  if(error || !data || !data[0]) return;
+  document.getElementById("stat-mentees").textContent = data[0].mentee_count;
+  document.getElementById("stat-mentors").textContent = data[0].mentor_count;
+});
 sb.auth.getSession().then(({data})=>{
   if(inRecoveryFlow) return;
   if(data.session) loadCurrentUserAndEnter();
