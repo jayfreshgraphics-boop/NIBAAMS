@@ -1239,9 +1239,8 @@ async function setupIdCard(){
   try{
     const canvas = document.getElementById("idcard-qr");
     if(canvas && window.QRCode){
-      const qrValue = currentUser.email
-        ? `mailto:${currentUser.email}`
-        : `NIBAAMS 2026 Cohort ID: ${currentUser.participant_id}`;
+      const qrValue = "https://rpjd.nseikejabranch.org.ng";
+await window.QRCode.toCanvas(canvas, qrValue, /* keep your existing options */);
       await window.QRCode.toCanvas(canvas, qrValue, { width: 220, margin: 1, errorCorrectionLevel: "L", color: { dark: "#0B1F14", light: "#FFFFFF" } });
     }
   }catch(err){ console.error("QR generation failed:", err); }
